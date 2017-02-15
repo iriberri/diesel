@@ -33,6 +33,7 @@ script:
   if [[ "$TRAVIS_RUST_VERSION" == nightly* ]]; then
     (cd diesel_compile_tests && travis-cargo test)
   fi
+
 matrix:
   allow_failures:
     - rust: nightly
