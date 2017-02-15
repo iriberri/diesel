@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `enum_server_command` enum in crate `mysqlclient_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, enum_server_command">
+
+    <title>mysqlclient_sys::enum_server_command - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>mysqlclient_sys</a></p><script>window.sidebarCurrent = {name: 'enum_server_command', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>mysqlclient_sys</a>::<wbr><a class='enum' href=''>enum_server_command</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/mysqlclient_sys/lib.rs.html#836-870' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum enum_server_command {
+    COM_SLEEP,
+    COM_QUIT,
+    COM_INIT_DB,
+    COM_QUERY,
+    COM_FIELD_LIST,
+    COM_CREATE_DB,
+    COM_DROP_DB,
+    COM_REFRESH,
+    COM_SHUTDOWN,
+    COM_STATISTICS,
+    COM_PROCESS_INFO,
+    COM_CONNECT,
+    COM_PROCESS_KILL,
+    COM_DEBUG,
+    COM_PING,
+    COM_TIME,
+    COM_DELAYED_INSERT,
+    COM_CHANGE_USER,
+    COM_BINLOG_DUMP,
+    COM_TABLE_DUMP,
+    COM_CONNECT_OUT,
+    COM_REGISTER_SLAVE,
+    COM_STMT_PREPARE,
+    COM_STMT_EXECUTE,
+    COM_STMT_SEND_LONG_DATA,
+    COM_STMT_CLOSE,
+    COM_STMT_RESET,
+    COM_SET_OPTION,
+    COM_STMT_FETCH,
+    COM_DAEMON,
+    COM_BINLOG_DUMP_GTID,
+    COM_RESET_CONNECTION,
+    COM_END,
+}</pre><div class='docblock'><p>@enum  enum_server_command
+@brief You should add new commands to the end of this list, otherwise old
+       servers won&#39;t be able to handle them as &#39;unsupported&#39;.</p>
+</div><h2 class='variants'>Variants</h2>
+<span id='variant.COM_SLEEP' class='variant'><span id='COM_SLEEP.v' class='invisible'><code>COM_SLEEP</code></span></span><span id='variant.COM_QUIT' class='variant'><span id='COM_QUIT.v' class='invisible'><code>COM_QUIT</code></span></span><span id='variant.COM_INIT_DB' class='variant'><span id='COM_INIT_DB.v' class='invisible'><code>COM_INIT_DB</code></span></span><span id='variant.COM_QUERY' class='variant'><span id='COM_QUERY.v' class='invisible'><code>COM_QUERY</code></span></span><span id='variant.COM_FIELD_LIST' class='variant'><span id='COM_FIELD_LIST.v' class='invisible'><code>COM_FIELD_LIST</code></span></span><span id='variant.COM_CREATE_DB' class='variant'><span id='COM_CREATE_DB.v' class='invisible'><code>COM_CREATE_DB</code></span></span><span id='variant.COM_DROP_DB' class='variant'><span id='COM_DROP_DB.v' class='invisible'><code>COM_DROP_DB</code></span></span><span id='variant.COM_REFRESH' class='variant'><span id='COM_REFRESH.v' class='invisible'><code>COM_REFRESH</code></span></span><span id='variant.COM_SHUTDOWN' class='variant'><span id='COM_SHUTDOWN.v' class='invisible'><code>COM_SHUTDOWN</code></span></span><span id='variant.COM_STATISTICS' class='variant'><span id='COM_STATISTICS.v' class='invisible'><code>COM_STATISTICS</code></span></span><span id='variant.COM_PROCESS_INFO' class='variant'><span id='COM_PROCESS_INFO.v' class='invisible'><code>COM_PROCESS_INFO</code></span></span><span id='variant.COM_CONNECT' class='variant'><span id='COM_CONNECT.v' class='invisible'><code>COM_CONNECT</code></span></span><span id='variant.COM_PROCESS_KILL' class='variant'><span id='COM_PROCESS_KILL.v' class='invisible'><code>COM_PROCESS_KILL</code></span></span><span id='variant.COM_DEBUG' class='variant'><span id='COM_DEBUG.v' class='invisible'><code>COM_DEBUG</code></span></span><span id='variant.COM_PING' class='variant'><span id='COM_PING.v' class='invisible'><code>COM_PING</code></span></span><span id='variant.COM_TIME' class='variant'><span id='COM_TIME.v' class='invisible'><code>COM_TIME</code></span></span><span id='variant.COM_DELAYED_INSERT' class='variant'><span id='COM_DELAYED_INSERT.v' class='invisible'><code>COM_DELAYED_INSERT</code></span></span><span id='variant.COM_CHANGE_USER' class='variant'><span id='COM_CHANGE_USER.v' class='invisible'><code>COM_CHANGE_USER</code></span></span><span id='variant.COM_BINLOG_DUMP' class='variant'><span id='COM_BINLOG_DUMP.v' class='invisible'><code>COM_BINLOG_DUMP</code></span></span><span id='variant.COM_TABLE_DUMP' class='variant'><span id='COM_TABLE_DUMP.v' class='invisible'><code>COM_TABLE_DUMP</code></span></span><span id='variant.COM_CONNECT_OUT' class='variant'><span id='COM_CONNECT_OUT.v' class='invisible'><code>COM_CONNECT_OUT</code></span></span><span id='variant.COM_REGISTER_SLAVE' class='variant'><span id='COM_REGISTER_SLAVE.v' class='invisible'><code>COM_REGISTER_SLAVE</code></span></span><span id='variant.COM_STMT_PREPARE' class='variant'><span id='COM_STMT_PREPARE.v' class='invisible'><code>COM_STMT_PREPARE</code></span></span><span id='variant.COM_STMT_EXECUTE' class='variant'><span id='COM_STMT_EXECUTE.v' class='invisible'><code>COM_STMT_EXECUTE</code></span></span><span id='variant.COM_STMT_SEND_LONG_DATA' class='variant'><span id='COM_STMT_SEND_LONG_DATA.v' class='invisible'><code>COM_STMT_SEND_LONG_DATA</code></span></span><span id='variant.COM_STMT_CLOSE' class='variant'><span id='COM_STMT_CLOSE.v' class='invisible'><code>COM_STMT_CLOSE</code></span></span><span id='variant.COM_STMT_RESET' class='variant'><span id='COM_STMT_RESET.v' class='invisible'><code>COM_STMT_RESET</code></span></span><span id='variant.COM_SET_OPTION' class='variant'><span id='COM_SET_OPTION.v' class='invisible'><code>COM_SET_OPTION</code></span></span><span id='variant.COM_STMT_FETCH' class='variant'><span id='COM_STMT_FETCH.v' class='invisible'><code>COM_STMT_FETCH</code></span></span><span id='variant.COM_DAEMON' class='variant'><span id='COM_DAEMON.v' class='invisible'><code>COM_DAEMON</code></span></span><span id='variant.COM_BINLOG_DUMP_GTID' class='variant'><span id='COM_BINLOG_DUMP_GTID.v' class='invisible'><code>COM_BINLOG_DUMP_GTID</code></span></span><span id='variant.COM_RESET_CONNECTION' class='variant'><span id='COM_RESET_CONNECTION.v' class='invisible'><code>COM_RESET_CONNECTION</code></span></span><span id='variant.COM_END' class='variant'><span id='COM_END.v' class='invisible'><code>COM_END</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/mysqlclient_sys/lib.rs.html#835' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/mysqlclient_sys/lib.rs.html#835' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/mysqlclient_sys/lib.rs.html#835' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/mysqlclient_sys/lib.rs.html#835' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/mysqlclient_sys/lib.rs.html#835' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../mysqlclient_sys/enum.enum_server_command.html' title='mysqlclient_sys::enum_server_command'>enum_server_command</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/mysqlclient_sys/lib.rs.html#835' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class='method'><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the state given, updating the hasher as necessary.</p>
+</div><h4 id='method.hash_slice' class='method'><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the state provided.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "mysqlclient_sys";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
